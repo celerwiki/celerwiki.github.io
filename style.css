@@ -1,78 +1,78 @@
-/*칠래 위키 style.css*/
 /*
-CSS 목차
-1.웹폰트
-2.전채적인 디자인
-3.상단바
-4.제목
-5.본문
+
+#260085
+#9D0077
+#DD135E
+#FE6D47
+#FFB545
+#F9F871
+
 */
-/*1.웹폰트*/
-/*1-1.레페리포인트 Oblique(제목)*/
 @font-face {
-  font-family: "LeferiPoint-BlackObliqueA";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-BlackObliqueA.woff")
+  font-family: "Cafe24Ohsquare";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
 }
-/*1-2.레페리포인트 Oblique(본문)*/
 @font-face {
-  font-family: "LeferiPoint-WhiteObliqueA";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff")
+  font-family: "Cafe24Ohsquareair";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff")
     format("woff");
   font-weight: normal;
   font-style: normal;
 }
-/*2.전채적인 디자인*/
+
 * {
-  font-family: LeferiPoint-WhiteObliqueA;
+  font-family: "Cafe24Ohsquareair";
+  transform: rotate(0.04deg);
 }
 body {
-  background-color: rgb(240, 240, 240);
-  padding-top: 6rem;
+  padding-top: 5rem;
+  background-color: rgba(249, 248, 113, 0.05);
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
 }
-/*3.상단바*/
+a {
+  text-decoration-line: none;
+  color: black;
+}
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-
-  height: 75px;
+  height: auto;
   padding: 1rem;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(235, 235, 235);
+  color: white;
+  background: #fe6d47;
 }
-.nav {
-  text-align: left;
-  margin: 0.5em;
-  text-decoration: none;
-  color: black;
+.nav-item {
+  color: white;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
-/*4.제목*/
+.nav-item:hover {
+  color: #f9f871;
+}
 .title {
-  font-size: 4.25rem;
-  font-family: LeferiPoint-BlackObliqueA;
-  font-weight: 900;
+  font-family: "Cafe24Ohsquare";
   text-align: center;
-}
-/*5.본문*/
-main {
-  padding: 0.5rem;
-  height: 100%;
+  font-size: 5rem;
+  font-weight: 100;
+  color: #260085;
 }
 .sub {
   text-align: center;
-  color: rgb(128, 128, 128);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 100;
+  color: #9d0077;
 }
-#subtitle {
-  font-size: 2.25rem;
-  font-weight: 700;
-  text-align: left;
+.first {
+  margin: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 100;
 }
